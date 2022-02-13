@@ -67,6 +67,24 @@ label {
 	padding-top: 60px;
 }
 
+#dynamic-list
+{
+  float: left;
+  list-style-type: none;
+}
+
+#item-text
+{
+  width: 350px;
+  margin-left: 20px;
+}
+
+#item-amount
+{
+  width: 120px;
+  margin-left: 20px;
+}
+
 .remove-field
 {
 	margin:auto;
