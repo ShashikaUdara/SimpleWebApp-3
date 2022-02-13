@@ -73,9 +73,9 @@ label {
   list-style-type: none;
 }
 
-#item-text
+#item-datalist
 {
-  width: 350px;
+  width: 400  px;
   margin-left: 20px;
 }
 
@@ -101,4 +101,9 @@ label {
 	cursor: pointer;
 	background-color:lightblue;
 	color: black;
+}
+
+#dFrom
+{
+  float: left;
 }
