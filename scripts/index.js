@@ -22,21 +22,21 @@ let fieldCount = 0;
 
 function addNewTextField()
 {
-    // creating the template
-    fieldCount++;
+   // creating the template
+   fieldCount++;
 
-    // getting item-datalist items from the pre loaded array from the db
-    let itemList = getItemList();
+   // getting item-datalist items from the pre loaded array from the db
+   let itemList = getItemList();
 
-    template_field += `<form id="dFrom">
-    <label class="label${fieldCount}">Item#${fieldCount}:</label>
-    <input list="item-datalist-${fieldCount}" name="items"><datalist id="item-datalist-${fieldCount}">
-    ${itemList}
-    </datalist>
-    <input id="item-amount-${fieldCount}" class="field-no-amount-${fieldCount}" type="text">
-    </form>`;
+   template_field = `<form id="dFrom">
+   <label class="label${fieldCount}">Item#${fieldCount}:</label>
+   <input list="item-datalist-${fieldCount}" name="items"><datalist id="item-datalist-${fieldCount}">
+   ${itemList}
+   </datalist>
+   <input id="item-amount-${fieldCount}" class="field-no-amount-${fieldCount}" type="text">
+   </form>`;
 
-    document.getElementById("bill-list").innerHTML = template_field;
+   document.getElementById("bill-list").innerHTML += template_field;
 }
 
 
@@ -78,3 +78,19 @@ function getBillList()
         // console.log(temp);
     }
 }
+
+// function addNewTextField()
+// {
+//     let itemList = getItemList();
+
+//     $fieldCount++;
+//     // var $node = '<p><label for="text'+$fieldCount+'">Text '+$fieldCount+': </label><input type="text" name="text'+$fieldCount+'" id="text'+$fieldCount+'"/><span class="removeField">Remove</span></p>';
+//     let $template_field = `<form id="dFrom">
+//     <label class="label${fieldCount}">Item#${fieldCount}:</label>
+//     <input list="item-datalist-${fieldCount}" name="items"><datalist id="item-datalist-${fieldCount}">
+//     ${itemList}
+//     </datalist>
+//     <input id="item-amount-${fieldCount}" class="field-no-amount-${fieldCount}" type="text">
+//     </form>`;
+//     ('#bill-list').last().after($template_field);
+// }
